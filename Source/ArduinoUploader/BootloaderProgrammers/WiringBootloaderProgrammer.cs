@@ -188,6 +188,7 @@ namespace ArduinoUploader.BootloaderProgrammers
             int i;
             for (i = 0; i < MaxSyncRetries; i++)
             {
+                Reset();
                 Send(new GetSyncRequest());
                 var result = Receive<GetSyncResponse>();
                 if (result == null) continue;

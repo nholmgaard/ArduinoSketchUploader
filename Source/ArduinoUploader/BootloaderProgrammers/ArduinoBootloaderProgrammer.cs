@@ -4,7 +4,7 @@ namespace ArduinoUploader.BootloaderProgrammers
 {
     internal abstract class ArduinoBootloaderProgrammer : SerialPortBootloaderProgrammer
     {
-        protected int MaxSyncRetries { get { return 20; } }
+        protected int MaxSyncRetries { get { return 10; } }
 
         protected abstract void Reset();
 

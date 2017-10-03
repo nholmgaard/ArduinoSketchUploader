@@ -66,7 +66,7 @@ namespace ArduinoUploader.BootloaderProgrammers
 
         protected void ToggleDtrRts(int wait1, int wait2, bool invert = false)
         {
-            logger.Trace("Toggling DTR/RTS...");
+            logger.Debug("Toggling DTR and RTS...");
 
             SerialPort.DtrEnable = invert;
             SerialPort.RtsEnable = invert;
